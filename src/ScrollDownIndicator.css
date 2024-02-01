@@ -1,0 +1,74 @@
+body {
+  background:#0b1d2a;
+}
+
+.scroll-down-indicator {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 30px;
+
+}
+
+@media screen and (min-width: 600px){
+    .scroll-down-indicator {
+        width: 40px;
+    }
+}
+.scroll-down-indicator .scroll-down-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--col-accent);
+}
+
+.scroll-down-indicator .scroll-down-container .scroll-call-to-action {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.scroll-down-arrows {
+    display: flex;
+    justify-content: center;
+}
+
+
+.arrows path {
+    stroke: var(--col-accent);
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /* Safari and Chrome */
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay:0s;
+    -webkit-animation-delay:0s;
+}

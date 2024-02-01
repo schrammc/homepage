@@ -1,3 +1,15 @@
+:root {
+    --col-text: #CCCCCC;
+    --col-background: #333333;
+    --col-accent-light: #4CC9D0;
+    --col-accent: #008080;
+    --col-link: #00FFFF;
+    --col-button: #2F4F4F;
+
+    --font-mono: monospace;
+    --font-text: sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -13,8 +25,137 @@
   }
 }
 
+.root {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--col-background);
+    color: var(--col-text);
+}
+
+.root-content {
+    width: 100%;
+}
+
+.hero-header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: var(font-text);
+
+}
+
+.hero-header-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.hero-header-content h1 {
+    font-size: 40px;
+    color: var(--col-accent-light);
+    font-family: var(--font-text);
+
+}
+    
+.hero-header-content h2 {
+    font-size: 25px;
+    color: var(--col-accent);
+    font-family: var(--font-mono);
+               
+}
+
+.hero-header-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.clickable-icon:hover { 
+    background-color: var(--col-accent);
+}
+.clickable-icon {
+    background-color: var(--col-text);
+    height: 50px;
+    width: 50px;
+}
+
+.linkedin-icon {
+    mask-image: url("/public/linkedin-logo.svg")
+}
+
+.github-icon {
+    mask-image: url("/public/github-icon.svg")
+}
+
+.nav-menu h1 {
+    display: none
+}
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.nav-menu ul li {
+    display: inline-block;
+}
+
+.nav-menu ul li a {
+    display: block;
+    padding: 1em;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media screen and (min-width: 600px){
+    .nav-menu ul li a {
+        padding: 2em;
+    }
+
+    .hero-header-content h1 {
+        font-size: 75px
+    }
+
+    .hero-header-content h2 {
+        font-size: 50px
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .root {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-menu {
+        height: 100vh;
+        width: 25em;
+    }
+
+    .nav-menu h1 {
+        padding: 20px;
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav-menu ul :hover {
+    background-color: red;
+    cursor: pointer;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: var(--col-background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +176,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(1vw, 1000px) 1fr;
+}
+
+.page-section h1 {
+    font-family: var(--font-mono)
+}
+
+.page-section h2 {
+    font-family: var(--font-mono)
+}
+
+
+.page-section {
+    grid-column: 2;
+    padding-top: 5em;
 }
