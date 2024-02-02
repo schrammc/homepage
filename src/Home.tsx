@@ -8,7 +8,10 @@ export function Home() {
         <div>
             <div className="hero-header">
                 <div className="hero-header-content">
-                    <h1>Christof Schramm</h1>
+                    <div className="header-super">
+                        <p >Hi there! I'm</p>
+                    </div>
+                    <h1 style={{ color: "var(--col-text)" }}>Christof Schramm</h1>
 
                     <h2>Software Engineer // Full Stack</h2>
                     <div className="hero-header-social-icons">
