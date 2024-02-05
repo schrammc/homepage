@@ -40,9 +40,6 @@ export function Home() {
                         projects. Furthermore I am very interested in optimizing
                         applications for efficiency and performance.
                     </p>
-                    <p>
-                        I am currently an engineer at Flint Healthcare
-                    </p>
                 </div>
                 <div className="page-section">
                     <h1> Resume</h1>

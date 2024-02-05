@@ -37,6 +37,10 @@
     background: linear-gradient(to bottom, var(--col-background-light), var(--col-background));
 }
 
+h1 {
+    color: var(--col-accent);
+}
+
 .hero-header .header-super {
     font-size: 20px;
     font-weight: bolder;
@@ -187,7 +191,9 @@
   left: 0;
   width: 12px;
   height: 12px;
-  background-color: var(--col-accent-light); 
+  border-color: var(--col-accent-light);
+  border-style:solid;
+  border-width: 3px;
   border-radius: 50%;
 }
 
@@ -195,10 +201,10 @@
 .resume .role:not(:last-child)::after {
   content: '';
   position: absolute;
-  top: 12px; /* Adjust this value to align with the center of the dot */
-  left: 5px; /* Adjust this value based on the width of your dot */
+  top: 25px; /* Adjust this value to align with the center of the dot */
+  left: 8px; /* Adjust this value based on the width of your dot */
   width: 2px; /* Line width */
-  height: 100%;
+  height: calc(100% - 14px);
   background-color: var(--col-accent-light); 
 }
 
