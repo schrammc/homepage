@@ -1,0 +1,59 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Clear old files FTP
+        run: |
+          lftp -u ${{ secrets.SFTP_USER }},${{ secrets.SFTP_PASS }} ftp://${{ secrets.SFTP_HOST }}<<EOF
+          cd /
+          rm -r *
+          quit
+          EOF
+
+      - name: Deploy via FTP
+        uses: pressidium/lftp-mirror-action@v1
+        with:
+          # SFTP credentials
+          host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          user: ${{ secrets.SFTP_USER }}
+          pass: ${{ secrets.SFTP_PASS }}
+          # lftp settings
+          onlyNewer: true
+          settings: 'sftp:auto-confirm=yes'
+          # Mirror command options
+          localDir: './build/'
+          remoteDir: '/'
+          reverse: true
+          ignoreFile: '.lftp_ignore'
+          options: '--verbose'
