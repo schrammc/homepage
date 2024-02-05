@@ -14,7 +14,7 @@ export function Home() {
 
                     <h1 style={{ color: "var(--col-text)" }}>Christof Schramm</h1>
 
-                    <h2>Software&nbsp;Engineer // Full&nbsp;Stack</h2>
+                    <h2>Software&nbsp;Engineer</h2>
                     <div className="hero-header-social-icons">
                         <a href="https://www.linkedin.com/in/christof-schramm-534731b9/">
                             <div className="clickable-icon linkedin-icon" />
@@ -32,7 +32,7 @@ export function Home() {
                     <h1>About me</h1>
                     <p>
                         I am a software engineer passionate about building
-                        'first-class technical solutions with a proven
+                        first-class technical solutions with a proven
                         track-record in the the Fintech and Saas
                         industries. While I am an expert functional programmer
                         in Haskell and Scala I'm also very open to learning
@@ -45,7 +45,7 @@ export function Home() {
                     <Resume items={[
                         {
                             title: "Senior Software Engineer"
-                            , company: "Flint Healthcare Inc."
+                            , company: "Flint Healthcare"
                             , dateRange: "April 2023 - current"
                             , description: "Senior Software Engineer in a startup company developing a scalable platform for nurses from the global market to obtain a US-License, emigrate to the US, and find long-term roles at healthcare providers. Haskell event sourcing backend and Elm frontend."
                             , skills: ["Haskell", "Elm", "Docker", "Github Actions"]
