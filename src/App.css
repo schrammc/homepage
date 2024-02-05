@@ -1,7 +1,7 @@
 :root {
     --col-text: #CCCCCC;
     --col-background: #333333;
-    --col-background-light: #1A1A1A;
+    --col-background-light: #2A2A2A;
     --col-accent: #008080;
     --col-accent-light: #4CC9D0;
     --col-link: #00FFFF;
@@ -193,16 +193,27 @@ h1 {
   border-radius: 50%;
 }
 
-/* Add a vertical line between dots */
-.resume .role:not(:last-child)::after {
+.resume .role::after {
   content: '';
   position: absolute;
-  top: 25px; /* Adjust this value to align with the center of the dot */
-  left: 8px; /* Adjust this value based on the width of your dot */
-  width: 2px; /* Line width */
+  top: 25px;
+  left: 8px;
+  width: 2px;
+ 
+}
+
+/* Add a vertical line between dots */
+.resume .role:not(:last-child)::after {
   height: calc(100% - 14px);
   background-color: var(--col-accent-light); 
 }
+
+/* Add a vertical line between dots */
+.resume .role:last-child::after {
+  height: 60%;
+  background: linear-gradient(to bottom, var(--col-accent-light), transparent);
+}
+
 
 .resume .role .skill-list {
     display: flex;
