@@ -101,11 +101,11 @@ h1 {
 }
 
 .linkedin-icon {
-    mask-image: url("/public/linkedin-logo.svg")
+    mask-image: url("/public/static/img/linkedin-logo.svg")
 }
 
 .github-icon {
-    mask-image: url("/public/github-icon.svg")
+    mask-image: url("/public/static/img/github-icon.svg")
 }
 
 
