@@ -1,8 +1,14 @@
 import "./ScrollDownIndicator.css";
 
 export function ScrollDownIndicator() {
-    return(
-        <div className="scroll-down-indicator">
+    return (
+        <div className="scroll-down-indicator" onClick={() => {
+            window.scrollBy({
+                left: 0,
+                top: window.innerHeight,
+                behavior: "smooth"
+            })
+        }}>
             <div className="scroll-down-container">
                 <div className="scroll-down-arrows">
                     <svg className="arrows" viewBox="0 0 60 72" width="100%">
