@@ -2,13 +2,16 @@
 export function Legal() {
     return (
         <div className="page-container">
-            <h1>Imprint</h1>
-
             <div className="page-section">
+
+                <h1>Imprint</h1>
+
                 <h2>Contact:</h2>
-                Christof Schramm<br />
-                Weidachweg 8<br />
-                82398 Oderding<br />
+                <p>
+                    Christof Schramm<br />
+                    Weidachweg 8<br />
+                    82398 Oderding<br />
+                </p>
                 <br />
                 Email: legal@christof-schramm.net<br />
             </div>
