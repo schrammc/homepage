@@ -48,6 +48,9 @@ function Root() {
             <div className="root-content">
                 <Outlet />
             </div>
+            <div className="footer">
+                <Link to="/legal">Imprint</Link>
+            </div>
         </div>
     );
 }

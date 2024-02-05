@@ -26,6 +26,11 @@
     width: 100%;
 }
 
+a {
+    color: var(--col-link);
+    font-size: var(--font-size-small-screen)
+}
+
 .hero-header {
     width: 100vw;
     height: 100vh;
@@ -222,4 +227,10 @@ h1 {
 
 .resume .role .content .skill-list .skill-pill:hover{
     background-color: var(--col-accent-light);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding:5em;
 }
