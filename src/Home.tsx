@@ -16,10 +16,10 @@ export function Home() {
 
                     <h2>Software&nbsp;Engineer</h2>
                     <div className="hero-header-social-icons">
-                        <a href="https://www.linkedin.com/in/christof-schramm-534731b9/">
+                        <a href="https://www.linkedin.com/in/christof-schramm-534731b9/" aria-label="My LinkedIn profile">
                             <div className="clickable-icon linkedin-icon" />
                         </a>
-                        <a href="https://github.com/schrammc">
+                        <a href="https://github.com/schrammc" aria-label="My GitHub profile">
                             <div className="clickable-icon github-icon" />
                         </a>
                     </div>
@@ -37,7 +37,11 @@ export function Home() {
                         industries. While I am an expert functional programmer
                         in Haskell and Scala I'm also very open to learning
                         technologies and programming languages for exciting new
-                        projects.
+                        projects. Furthermore I am very interested in optimizing
+                        applications for efficiency and performance.
+                    </p>
+                    <p>
+                        I am currently an engineer at Flint Healthcare
                     </p>
                 </div>
                 <div className="page-section">

@@ -36,7 +36,7 @@ jobs:
         run: |
           lftp -u ${{ secrets.SFTP_USER }},${{ secrets.SFTP_PASS }} ftp://${{ secrets.SFTP_HOST }}<<EOF
           cd /
-          rm -r *
+          rm -rf .
           quit
           EOF
 
