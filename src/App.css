@@ -8,7 +8,7 @@
     --col-button: #2F4F4F;
 
     --font-mono: monospace;
-    --font-text: Helvetica, sans-serif;
+    --font-text: Poppins, Helvetica, sans-serif;
     --font-size-std: 20px;
     --font-size-md-screen: 16px;
     --font-size-small-screen: 14px;
@@ -37,17 +37,6 @@
     background: linear-gradient(to bottom, var(--col-background-light), var(--col-background));
 }
 
-h1 {
-    color: var(--col-accent);
-}
-
-.hero-header .header-super {
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--col-accent-light);
-    font-family: var(--font-mono);
-}
-
 .hero-header-content {
     display: flex;
     flex-direction:column;
@@ -58,8 +47,14 @@ h1 {
 }
 
 .hero-header-content h1 {
-    font-size: 40px;
-    color: var(--col-accent-light);
+    font-size: 50px;
+    font-weight: 700;
+/*    color: var(--col-accent-light);*/
+
+    background: linear-gradient(to bottom right, var(--col-text), var(--col-accent));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     font-family: var(--font-text);
 
 }
@@ -75,6 +70,10 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+h1 {
+    color: var(--col-accent);
 }
 
 .clickable-icon:hover { 
@@ -110,15 +109,11 @@ h1 {
     }
 
     .hero-header-content h1 {
-        font-size: 55px
+        font-size: 65px
     }
 
     .hero-header-content h2 {
         font-size: 30px
-    }
-
-    .hero-header .header-super {
-        font-size: 25px;
     }
 
 }
@@ -130,17 +125,12 @@ h1 {
     }
 
     .hero-header-content h1 {
-        font-size: 75px
+        font-size: 90px
     }
 
     .hero-header-content h2 {
         font-size: 50px
     }
-
-    .hero-header .header-super {
-        font-size: 30px;
-    }
-
 
 }
 
@@ -158,6 +148,7 @@ h1 {
     text-align: justify;
     margin-left: 15px;
     margin-right: 15px;
+    width: 100%;
 }
 
 .page-container {

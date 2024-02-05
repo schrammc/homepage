@@ -9,7 +9,8 @@ function NavItem({ route, label }: NavItemProps) {
 const navItems = [
     { route: "/", label: "Home" },
     { route: "/projects", label: "Projects" },
-    { route: "/archive", label: "Archive" }]
+    { route: "/archive", label: "Archive" },
+    { route: "/legal", label: "Legal" }]
 
 export function Nav() {
     return (

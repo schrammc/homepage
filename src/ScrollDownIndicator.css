@@ -37,7 +37,7 @@ body {
 .arrows path {
     stroke: var(--col-accent);
     fill: transparent;
-    stroke-width: 1px;
+    stroke-width: 3px;
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite;
 }

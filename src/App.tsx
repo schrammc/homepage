@@ -1,6 +1,7 @@
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import { Home } from './Home';
+import { Legal } from './Legal';
 
 
 
@@ -13,6 +14,10 @@ let router = createBrowserRouter([
             {
                 path: "",
                 element: <Home />
+            }, 
+            {
+                path: "legal",
+                element: <Legal />
             }
         ]
     }
