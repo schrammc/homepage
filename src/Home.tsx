@@ -101,6 +101,29 @@ export function Home() {
                         }
                     ]}></Resume>
                 </div>
+                <div className="page-container">
+                    <div className="page-section">
+                        <h1>Articles and Publications</h1>
+                        <ul>
+                            <li>
+
+                                Schramm, C., Wang, Y., & Bry, F. (2018, May).&nbsp;
+                                <a href="/static/codekoan-icse2018.pdf">
+                                CodeKoan: A Source Code Pattern Search Engine
+                                Extracting Crowd Knowledge.</a> In 2018 IEEE/ACM
+                                5th International Workshop on Crowd Sourcing in
+                                Software Engineering (CSI-SE) (pp. 1-8). IEEE.
+                            </li>
+                            <li>
+
+                                Schramm, C. (2017), <a
+                                    href="/static/master-thesis.pdf">Recognition
+                                    of Code Patterns From Stackoverflow Answers
+                                    in Computer Programs </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     )
