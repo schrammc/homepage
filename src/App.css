@@ -8,8 +8,9 @@
     --col-button: #2F4F4F;
 
     --font-mono: monospace;
-    --font-text: Poppins, sans-serif;
+    --font-text: Helvetica, sans-serif;
     --font-size-std: 20px;
+    --font-size-md-screen: 16px;
     --font-size-small-screen: 14px;
 }
 
@@ -29,16 +30,16 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    font-family: var(font-text);
+    align-items: center;
+    font-family: var(--font-text);
     background: linear-gradient(to bottom, var(--col-background-light), var(--col-background));
-    padding: 15px;
-
 }
 
 .hero-header .header-super {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bolder;
     color: var(--col-accent-light);
     font-family: var(--font-mono);
 }
@@ -47,6 +48,9 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
+    align-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .hero-header-content h1 {
@@ -98,6 +102,26 @@
 @media screen and (min-width: 600px){
 
     .root {
+        font-size: var(--font-size-md-screen);
+    }
+
+    .hero-header-content h1 {
+        font-size: 55px
+    }
+
+    .hero-header-content h2 {
+        font-size: 30px
+    }
+
+    .hero-header .header-super {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+
+    .root {
         font-size: var(--font-size-std);
     }
 
@@ -109,13 +133,10 @@
         font-size: 50px
     }
 
-}
-
-@media screen and (min-width: 1000px){
-    .root {
-        display: flex;
-        flex-direction: row;
+    .hero-header .header-super {
+        font-size: 30px;
     }
+
 
 }
 
@@ -131,14 +152,15 @@
     max-width: 800px;
     margin-bottom: 5em;
     text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .page-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 15px;
+    align-items: center;
+    width: 100vw;
 }
 
 .resume {
