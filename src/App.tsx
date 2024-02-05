@@ -1,7 +1,5 @@
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
-import logo from './logo.svg';
-import { Nav } from './Nav';
 import { Home } from './Home';
 
 
@@ -14,7 +12,7 @@ let router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Home/>
+                element: <Home />
             }
         ]
     }
