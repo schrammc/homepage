@@ -1,4 +1,5 @@
 import "./ScrollDownIndicator.css";
+import { React } from "react";
 
 export function ScrollDownIndicator() {
     return (
@@ -7,7 +8,7 @@ export function ScrollDownIndicator() {
                 left: 0,
                 top: window.innerHeight,
                 behavior: "smooth"
-            })
+            });
         }}>
             <div className="scroll-down-container">
                 <div className="scroll-down-arrows">

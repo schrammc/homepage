@@ -1,4 +1,5 @@
 import { ResumeItemProps } from './Types';
+import { React } from "react";
 
 export function Resume(props: { items: ResumeItemProps[] }) {
     return (

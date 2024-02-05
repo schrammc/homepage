@@ -2,10 +2,9 @@ import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-
 import './App.css';
 import { Home } from './Home';
 import { Legal } from './Legal';
+import React from "react";
 
-
-
-let router = createBrowserRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
@@ -38,7 +37,7 @@ function Error404() {
             </p>
             <Link to="/">Home</Link>
         </div>
-    )
+    );
 }
 
 

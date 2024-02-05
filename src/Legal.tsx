@@ -1,3 +1,4 @@
+import { React } from "react";
 
 export function Legal() {
     return (
@@ -65,4 +66,4 @@ export function Legal() {
 
         </div>
     );
-};
+}

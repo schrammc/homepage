@@ -2,6 +2,7 @@ import "./ScrollDownIndicator";
 import "./Resume";
 import { ScrollDownIndicator } from "./ScrollDownIndicator";
 import { Resume } from "./Resume";
+import { React } from "react";
 
 export function Home() {
     return (
@@ -31,7 +32,7 @@ export function Home() {
                         first-class technical solutions with a proven
                         track-record in the the Fintech and Saas
                         industries. While I am an expert functional programmer
-                        in Haskell and Scala I'm also very open to learning
+                        in Haskell and Scala I&apos;m also very open to learning
                         technologies and programming languages for exciting new
                         projects. Furthermore I am very interested in optimizing
                         applications for efficiency and performance.
@@ -109,22 +110,21 @@ export function Home() {
 
                                 Schramm, C., Wang, Y., & Bry, F. (2018, May).&nbsp;
                                 <a href="/static/codekoan-icse2018.pdf">
-                                CodeKoan: A Source Code Pattern Search Engine
-                                Extracting Crowd Knowledge.</a> In 2018 IEEE/ACM
+                                    CodeKoan: A Source Code Pattern Search Engine
+                                    Extracting Crowd Knowledge.</a> In 2018 IEEE/ACM
                                 5th International Workshop on Crowd Sourcing in
                                 Software Engineering (CSI-SE) (pp. 1-8). IEEE.
                             </li>
                             <li>
 
-                                Schramm, C. (2017), <a
-                                    href="/static/master-thesis.pdf">Recognition
-                                    of Code Patterns From Stackoverflow Answers
-                                    in Computer Programs </a>
+                                Schramm, C. (2017), <a href="/static/master-thesis.pdf">Recognition
+                                of Code Patterns From Stackoverflow Answers
+                                in Computer Programs </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
