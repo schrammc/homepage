@@ -1,5 +1,4 @@
 import "./ScrollDownIndicator.css";
-import { React } from "react";
 
 export function ScrollDownIndicator() {
     return (

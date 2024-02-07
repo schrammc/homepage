@@ -1,5 +1,3 @@
-import { React } from "react";
-
 export function Legal() {
     return (
         <div className="page-container">

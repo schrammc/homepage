@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fontsource/poppins';
-import '@fontsource/poppins/700.css'; 
+import '@fontsource/poppins/700.css';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

@@ -2,7 +2,6 @@ import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-
 import './App.css';
 import { Home } from './Home';
 import { Legal } from './Legal';
-import React from "react";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +12,7 @@ const router = createBrowserRouter([
             {
                 path: "",
                 element: <Home />
-            }, 
+            },
             {
                 path: "legal",
                 element: <Legal />

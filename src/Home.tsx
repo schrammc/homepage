@@ -1,8 +1,5 @@
-import "./ScrollDownIndicator";
-import "./Resume";
-import { ScrollDownIndicator } from "./ScrollDownIndicator";
-import { Resume } from "./Resume";
-import { React } from "react";
+import { ScrollDownIndicator } from "./components/ScrollDownIndicator";
+import { Resume } from "./components/Resume";
 
 export function Home() {
     return (
@@ -118,8 +115,8 @@ export function Home() {
                             <li>
 
                                 Schramm, C. (2017), <a href="/static/master-thesis.pdf">Recognition
-                                of Code Patterns From Stackoverflow Answers
-                                in Computer Programs </a>
+                                    of Code Patterns From Stackoverflow Answers
+                                    in Computer Programs </a>
                             </li>
                         </ul>
                     </div>
