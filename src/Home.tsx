@@ -1,5 +1,6 @@
 import { ScrollDownIndicator } from "./components/ScrollDownIndicator";
 import { Resume } from "./components/Resume";
+import { Link } from 'react-router-dom';
 
 export function Home() {
     return (
@@ -117,6 +118,16 @@ export function Home() {
                                 Schramm, C. (2017), <a href="/static/master-thesis.pdf">Recognition
                                     of Code Patterns From Stackoverflow Answers
                                     in Computer Programs </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="page-container">
+                    <div className="page-section">
+                        <h1>Showcases</h1>
+                        <ul>
+                            <li>
+                                <Link to="/showcase/news-sentiment">German news sentiment</Link>
                             </li>
                         </ul>
                     </div>

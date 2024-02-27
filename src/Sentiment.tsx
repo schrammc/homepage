@@ -7,7 +7,7 @@ export default function Sentiment() {
     useEffect(() => {
 
         const fetchData = async () => {
-            const response = await window.fetch("http://api.christof-schramm.net/sentiment");
+            const response = await window.fetch("http://localhost:8080/sentiment");
             const responseData = await response.json();
             if (response.ok) {
                 setSentimentData(responseData);
@@ -23,7 +23,16 @@ export default function Sentiment() {
         return (
             <div className="page-container">
                 <div className="page-section">
+                    <h1>News sentiment analytics</h1>
+                </div>
+                <div className="page-section">
                     <SentimentChart sentimentData={sentimentData} />
+                </div>
+                <div className="page-section">
+                    <h2>What is this?</h2>
+                    <p>This chart is a continuously updated result of running
+                        state of the art sentiment analysis tooling on German
+                        language news articles from major publications.</p>
                 </div>
             </div>
         );
