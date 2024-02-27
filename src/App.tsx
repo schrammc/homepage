@@ -1,7 +1,9 @@
+import React from 'react';
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import { Home } from './Home';
 import { Legal } from './Legal';
+const Sentiment = React.lazy(() => import('./Sentiment'));
 
 const router = createBrowserRouter([
     {
@@ -16,7 +18,16 @@ const router = createBrowserRouter([
             {
                 path: "legal",
                 element: <Legal />
-            }
+            },
+            {
+                path: "showcase",
+                children: [
+                    {
+                        path: "news-sentiment",
+                        element: <Sentiment />
+                    }
+                ]
+            },
         ]
     }
 ]);
