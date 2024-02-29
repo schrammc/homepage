@@ -122,6 +122,16 @@ export function Home() {
                         </ul>
                     </div>
                 </div>
+                <div className="page-container">
+                    <div className="page-section">
+                        <h1>Showcases</h1>
+                        <ul>
+                            <li>
+                                <Link to="/showcase/news-sentiment">German news sentiment</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );
