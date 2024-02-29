@@ -7,7 +7,7 @@ export default function Sentiment() {
     useEffect(() => {
 
         const fetchData = async () => {
-            const response = await window.fetch("http://api.christof-schramm.net/sentiment");
+            const response = await window.fetch("https://api.christof-schramm.net/sentiment");
             const responseData = await response.json();
             if (response.ok) {
                 setSentimentData(responseData);
