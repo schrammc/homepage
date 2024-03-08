@@ -38,7 +38,7 @@ export function Legal() {
                 <h3>Liability for Links</h3>
 
                 My page contains links to external third-party websites, over
-                whose contents I have no influence. Therefore, I do assume any
+                whose contents I have no influence. Therefore, I do not assume any
                 liability for this external content. The respective provider or
                 operator of the pages is always responsible for the contents of
                 the linked pages. The linked pages were checked for possible
