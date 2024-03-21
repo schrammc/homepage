@@ -1,6 +1,6 @@
-import { ScrollDownIndicator } from "./components/ScrollDownIndicator";
-import { Resume } from "./components/Resume";
 import { Link } from 'react-router-dom';
+import { Resume } from "./components/Resume";
+import { ScrollDownIndicator } from "./components/ScrollDownIndicator";
 
 export function Home() {
     return (
@@ -35,14 +35,25 @@ export function Home() {
                         projects. Furthermore I am very interested in optimizing
                         applications for efficiency and performance.
                     </p>
+
+                    <p>
+                        I currently work as a Senior Software Engineer at <a href="https://tacto.ai">Tacto</a>.
+                    </p>
                 </div>
                 <div className="page-section">
                     <h1> Resume</h1>
                     <Resume items={[
                         {
                             title: "Senior Software Engineer"
+                            , company: "Tacto"
+                            , dateRange: "March 2024 - current"
+                            , description: "Senior Software Engineer working on a novel Supplier Relations Management solution for European SMEs."
+                            , skills: ["Python", "FastAPI", "React", "Typescript", "Kubernetes", "Docker", "Github Actions"]
+                        },
+                        {
+                            title: "Senior Software Engineer"
                             , company: "Flint Healthcare"
-                            , dateRange: "April 2023 - current"
+                            , dateRange: "April 2023 - February 2024"
                             , description: "Senior Software Engineer in a startup company developing a scalable platform for nurses from the global market to obtain a US-License, emigrate to the US, and find long-term roles at healthcare providers. Haskell event sourcing backend and Elm frontend."
                             , skills: ["Haskell", "Elm", "Docker", "Github Actions"]
                         }
