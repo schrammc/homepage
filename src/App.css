@@ -32,7 +32,6 @@ body {
 
 a {
     color: var(--col-link);
-    font-size: var(--font-size-small-screen)
 }
 
 .hero-header {
@@ -47,7 +46,7 @@ a {
 
 .hero-header-content {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     margin-left: 15px;
@@ -65,12 +64,12 @@ a {
     font-family: var(--font-text);
 
 }
-    
+
 .hero-header-content h2 {
     font-size: 25px;
     color: var(--col-accent);
     font-family: var(--font-mono);
-               
+
 }
 
 .hero-header-social-icons {
@@ -83,16 +82,17 @@ h1 {
     color: var(--col-accent);
 }
 
-.clickable-icon:hover { 
+.clickable-icon:hover {
     background-color: var(--col-accent);
 }
+
 .clickable-icon {
     background-color: var(--col-text);
     height: 25px;
     width: 25px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     .clickable-icon {
         background-color: var(--col-text);
         height: 50px;
@@ -109,7 +109,7 @@ h1 {
 }
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
 
     .root {
         font-size: var(--font-size-md-screen);
@@ -125,7 +125,7 @@ h1 {
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
 
     .root {
         font-size: var(--font-size-std);
@@ -176,45 +176,45 @@ h1 {
 }
 
 .resume .role {
-  position: relative;
-  padding-left: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .resume .role .dot {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  border-color: var(--col-accent-light);
-  border-style:solid;
-  border-width: 3px;
-  border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-color: var(--col-accent-light);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
 }
 
 .resume .role::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: 8px;
-  width: 2px;
- 
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 8px;
+    width: 2px;
+
 }
 
 /* Add a vertical line between dots */
 .resume .role:not(:last-child)::after {
-  height: calc(100% - 14px);
-  background-color: var(--col-accent-light); 
+    height: calc(100% - 14px);
+    background-color: var(--col-accent-light);
 }
 
 /* Add a vertical line between dots */
 .resume .role:last-child::after {
-  height: 60%;
-  background: linear-gradient(to bottom, var(--col-accent-light), transparent);
+    height: 60%;
+    background: linear-gradient(to bottom, var(--col-accent-light), transparent);
 }
 
 
@@ -228,7 +228,7 @@ h1 {
 .resume .role .content .skill-list .skill-pill {
     border-radius: 5px;
     background-color: var(--col-accent);
-    color:white;
+    color: white;
     white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
@@ -239,12 +239,12 @@ h1 {
     user-select: none;
 }
 
-.resume .role .content .skill-list .skill-pill:hover{
+.resume .role .content .skill-list .skill-pill:hover {
     background-color: var(--col-accent-light);
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    padding:5em;
+    padding: 5em;
 }
