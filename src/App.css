@@ -2,7 +2,7 @@
     --col-text: #CCCCCC;
     --col-background: #333333;
     --col-background-light: #2A2A2A;
-    --col-accent: #008080;
+    --col-accent: #4d898a;
     --col-accent-light: #4CC9D0;
     --col-link: #00FFFF;
     --col-button: #2F4F4F;
@@ -79,7 +79,7 @@ a {
 }
 
 h1 {
-    color: var(--col-accent);
+    color: var(--col-text);
 }
 
 .clickable-icon:hover {
@@ -203,6 +203,10 @@ h1 {
     left: 8px;
     width: 2px;
 
+}
+
+.resume .role .content {
+    padding-top: 5px;
 }
 
 /* Add a vertical line between dots */
