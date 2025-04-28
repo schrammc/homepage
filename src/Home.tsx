@@ -35,10 +35,6 @@ export function Home() {
                         projects. Furthermore I am very interested in optimizing
                         applications for efficiency and performance.
                     </p>
-
-                    <p>
-                        I currently work as a Senior Software Engineer at <a href="https://tacto.ai">Tacto</a>.
-                    </p>
                 </div>
                 <div className="page-section">
                     <h1> Resume</h1>
@@ -46,7 +42,7 @@ export function Home() {
                         {
                             title: "Senior Software Engineer"
                             , company: "Tacto"
-                            , dateRange: "March 2024 - current"
+                            , dateRange: "March 2024 - May 2025"
                             , description: "Senior Software Engineer working on a novel Supplier Relations Management solution for European SMEs."
                             , skills: ["Python", "FastAPI", "React", "Typescript", "Kubernetes", "Docker", "Github Actions"]
                         },
